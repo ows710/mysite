@@ -2,7 +2,7 @@
 ul {list-style-type: none;}
 a{text-decoration: none;}
 header{width: 100%; border-bottom: 1px solid black;}
-header .inner {width: 1180px; height: 120px; margin: 0px auto; position: relative;}
+header .inner {width: 1180px; height: 90px; margin: 0px auto; position: relative;}
 header .inner h1 {position: absolute; left: 10px; bottom: 15px;}
 header .inner h1 a {font: bold 24px/1 "verdana"; color: #444;}
 header .inner #gnb {position: absolute; bottom: 0px; right: 0px;}
@@ -12,16 +12,18 @@ header .inner #gnb li a:hover {background: #555; color: #fff;}
 header .inner .util {position: absolute; top: 20px; right: 30px;}
 header .inner .util li {float: left;}
 header .inner .util li a {display: block; font: 12px/1 "verdana"; color: #999; padding: 0px 10px;}
-.main {width: 100%; height: 590px; background-image: url(bg_main.png);}
-.main div {width: 800px; height: 300px; margin: 0px auto; padding-top: 150px; color: white; font-size: 25px;}
-.main div span {font-size: 80px;}
+.main {width: 100%; height: 400px; background-image: url(bg_main.png); background-repeat: no-repeat; background-size: 100% 100%;}
+.main div {width: 1000px; height: 300px; margin: 0px auto; padding-top: 50px; color: white; font-size: 25px;}
+.main div span {font-size: 50px; line-height: 100px;}
+.main div p { margin: 0px auto; line-height: 50px;}
 section {width: 1180px; height: 450px; margin: 0px auto; padding: 50px;}
-section>p {text-align: center; font-weight: bold;}
-section article { float: left; width: 250px; margin: 50px 10px; padding: 10px; overflow: hidden;}
+section>p {text-align: center; font-weight: bold; font-size: 50px;}
+section article {text-align: center; float: left; width: 300px; margin: 20px 0px; overflow: hidden;}
+section article img {width: 80px; height: 80px;}
 section article p {font-weight: bold; margin: 10px 0px;}
-footer {width: 100%; margin-top: 30px; padding-bottom: 30px; background-color: #202032;}
-footer div{ width: 1000px; height: 100px; margin: 0px auto; position: relative;}
-footer p {width: 1000px; margin: 0px auto; padding: 20px 10px 0px; line-height: 20px; color: gray; font-style: 12px;}
+footer {width: 100%; margin-top: 1000px; padding-bottom: 30px; background-color: #202032;}
+footer div{ width: 1000px; height: 60px; margin: 0px auto; position: relative;}
+footer p {width: 1000px; margin: 0px auto; padding: 20px 10px 0px; line-height: 20px; color: gray; font-style: 15px;}
 footer div h1 {position: absolute; left: 10px; bottom: 15px; color: gray;}
 footer div ul {position: absolute; right: 20px; bottom: 15px;}
 footer div ul li {display: inline-block; margin: 0px 5px; color: gray;}

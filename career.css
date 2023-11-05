@@ -2,7 +2,7 @@
 ul {list-style-type: none;}
 a{text-decoration: none;}
 header{width: 100%; border-bottom: 1px solid black; position: fixed; top: 0px; background: white;}
-header .inner {width: 1180px; height: 120px; margin: 0px auto; position: relative;}
+header .inner {width: 1180px; height: 90px; margin: 0px auto; position: relative;}
 header .inner h1 {position: absolute; left: 10px; bottom: 15px;}
 header .inner h1 a {font: bold 24px/1 "verdana"; color: #444;}
 header .inner #gnb {position: absolute; bottom: 0px; right: 0px;}
