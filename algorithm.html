@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html> 
   <head><title>SOLVEDPROBLEM</title><meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="algorithm.css"></head>
   <body>
@@ -37,36 +37,46 @@
     </div>
     <section>
       <article>
-        <p>1. 백준 푼 문제 리스트(분류별로!)=> 계속 추가</p>
-      </article>
-      <article class="item1">
-        <p>Merry Christmas</p>
-      </article>
-      <article class="item2">
-        <p>Frozen</p>
-      </article>
-      <article class="item3" style="background-image: url(290x95-1.png);">
-        <p>Present</p>
-      </article>
-      <article class="item3" style="background-image: url(290x95-2.png);"></article>
-      <div>
-        <article class="item4" style="background-image: url(490x240-1.png);">
-          <p class="p1">Someone who solves a problem you didn't know you had,
-          in a way that you don't understand.</p>
-        </article>
-        <article class="item4" style="margin-top: 10px; background-image: url(490x240-2.png);">
-          <p class="p2">Be RICH!!</p>
-        </article>
-      </div>
-      <article class="item5"></article>
-      <article class="item6">
-          <p>Life is entirely Y.O.U.R.S</p>
-      </article>
-      <article class="item7">
-        <div>
-          <span>Programmer</span> is the perfect future.<br>
-          Let's be <span>the Digital Nomad!</span>
+        <h2>백준. A+B <span class="success">성공</span></h2>
+        <h3>문제</h3>
+        <p>두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.</p>
+        <h3>입력</h3>
+        <p>첫째 줄에 A와 B가 주어진다. (0 < A, B < 10)</p>
+        <h3>출력</h3>
+        <p>첫째 줄에 A+B를 출력한다.</p>
+        <h3>해석</h3>
+        <p>1. 주어진 두 정수 A, B가 0보다 크고 10보다 작은 자연수임을 확인하였다.</p>
+        <p>2. A, B를 더한 변수를 새로 만드는 대신 더한 값을 바로 출력하는 것이 속도가 더 빠를 것이라고 판단하였다.</p>
+        <h3>풀이 코드</h3>
+        <div class="lang">
+          <ul>
+            <li><a href="#c" onclick="showScript('c')"><img src='c.png'></a></li>
+            <li><a href="#java" onclick="showScript('java')"><img src='java.png'></a></li>
+            <li><a href="#python" onclick="showScript('python')"><img src='python.png'></a></li>
+            <li><a href="#nodejs" onclick="showScript('nodejs')"><img src='nodejs.png'></a></li>
+          </ul>
         </div>
+        
+        <div id="scriptDisplay" style="margin-top: -400px; width: auto; height: 350px; border: 1px solid #ccc;">
+          <script id="cScript" src="https://gist.github.com/ows710/307ff513d6b5a81a11d76a01d3914af5.js"></script>
+          <script id="javaScript" src="https://gist.github.com/ows710/ba71cbea0d0d1f3f4a66890da99abe88.js"></script>
+          <script id="pythonScript" src="https://gist.github.com/ows710/8a036cc50835abc891c67d89c9d94888.js"></script>
+          <script id="nodejsScript" src="https://gist.github.com/ows710/d5384e7edca4726b0ea6c94a85dc8819.js"></script>
+        </div>
+        
+        <script>
+          function showScript(language) {
+            var scripts = document.querySelectorAll('script[id$="Script"]');
+            scripts.forEach(function(script) {
+              script.style.display = 'none';
+            });
+        
+            var selectedScript = document.getElementById(language + 'Script');
+            if (selectedScript) {
+              selectedScript.style.display = 'block';
+            }
+          }
+        </script>        
       </article>
     </section>
   </body>
