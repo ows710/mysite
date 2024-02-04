@@ -20,11 +20,10 @@ section div p {font-weight: bold; font-size: 50px;}
 section div article {text-align: center; float: left; width: 300px; border: 2px; margin: 20px 0px; overflow: hidden;}
 section div article img {width: 80px; height: 80px;}
 section div article p {font-weight: bold; margin: 10px 0px;}
-footer {width: 100%; margin-top: 1000px; padding-bottom: 30px; background-color: #202032;}
-footer div{ width: 1000px; height: 60px; margin: 0px auto; position: relative;}
-footer p {width: 1000px; margin: 0px auto; padding: 20px 10px 0px; line-height: 20px; color: gray; font-style: 15px;}
+footer {width: 100%; height: 200px; margin-top: 1000px; padding-bottom: 30px; background-color: #202032;}
+footer span {font-size: 30px; font-weight: bold;}
+footer div { width: 1000px; margin: 0px auto; position: relative;}
+footer p {width: 1000px; margin: 0px auto; padding: 20px 10px 0px; line-height: 20px; color: gray; font-size: 20px;}
 footer div h1 {position: absolute; left: 10px; bottom: 15px; color: gray;}
 footer div ul {position: absolute; right: 20px; bottom: 15px;}
 footer div ul li {display: inline-block; margin: 0px 5px; color: gray;}
-footer div ul li a {color: gray;}
-footer div ul li a:hover {color: orange;}

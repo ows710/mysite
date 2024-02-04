@@ -34,3 +34,10 @@ article.item6 p {line-height: 371px; text-align: center; color: white; font-size
 article.item7 {width: 1000px; height: 361px; margin-top: 10px; margin-bottom: 50px; background-image: url(1000x361.png);}
 article.item7 div {width: 450px; height: 150px; position: absolute; right: 30px; bottom: 40px; font-size: 20px; color: white; line-height: 50px;}
 article.item7 div span {font-weight: bold; font-size: 30px;}
+footer {width: 100%; height: 200px; margin-top: 1000px; padding-bottom: 30px; background-color: #202032;}
+footer span {font-size: 30px; font-weight: bold;}
+footer div { width: 1000px; margin: 0px auto; position: relative;}
+footer p {width: 1000px; margin: 0px auto; padding: 20px 10px 0px; line-height: 20px; color: gray; font-size: 20px;}
+footer div h1 {position: absolute; left: 10px; bottom: 15px; color: gray;}
+footer div ul {position: absolute; right: 20px; bottom: 15px;}
+footer div ul li {display: inline-block; margin: 0px 5px; color: gray;}
