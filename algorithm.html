@@ -10,8 +10,7 @@
           <li><a href="index.html">HOME</a></li>
           <li><a href="study.html">STUDY</a></li>
           <li><a href="algorithm.html">ALGORITHM</a></li>
-          <li><a href="school.html">SCHOOL</a></li>
-          <li><a href="person.html">PERSON</a></li>
+          <li><a href="career.html">CAREER</a></li>
           <li><a href="aboutme.html">ABOUT ME</a></li>
         </ul>
       </div>
@@ -36,48 +35,59 @@
       <a href="disjointset.html">분리집합</a>
     </div>
     <section>
-      <article>
-        <h2>백준. A+B <span class="success">성공</span></h2>
-        <h3>문제</h3>
-        <p>두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.</p>
-        <h3>입력</h3>
-        <p>첫째 줄에 A와 B가 주어진다. (0 < A, B < 10)</p>
-        <h3>출력</h3>
-        <p>첫째 줄에 A+B를 출력한다.</p>
-        <h3>해석</h3>
-        <p>1. 주어진 두 정수 A, B가 0보다 크고 10보다 작은 자연수임을 확인하였다.</p>
-        <p>2. A, B를 더한 변수를 새로 만드는 대신 더한 값을 바로 출력하는 것이 속도가 더 빠를 것이라고 판단하였다.</p>
-        <h3>풀이 코드</h3>
-        <div class="lang">
-          <ul>
-            <li><a href="#c" onclick="showScript('c')"><img src='c.png'></a></li>
-            <li><a href="#java" onclick="showScript('java')"><img src='java.png'></a></li>
-            <li><a href="#python" onclick="showScript('python')"><img src='python.png'></a></li>
-            <li><a href="#nodejs" onclick="showScript('nodejs')"><img src='nodejs.png'></a></li>
-          </ul>
+      <div class="study_container">
+        <a href="one.html">
+          <div class="study">
+            <div class="study_pick" style="background-image: url(study.png);"></div> 
+            <div class="study_detail">
+              <p>A+B</p>
+              <span>덧셈</span>
+            </div>
+          </div>
+        </a>
+          <div class="study">
+            <div class="study_pick" style="background-image: url(study.png);"></div>
+            <div class="study_detail">
+              <p>A+B</p>
+              <span>1셈</span>
+            </div>
+          </div>
+          <div class="study">
+            <div class="study_pick" style="background-image: url(study.png);"></div>
+            <div class="study_detail">
+              <p>A+B</p>
+              <span>2셈</span>
+            </div>
+          </div>
+          <div class="study">
+            <div class="study_pick" style="background-image: url(study.png);"></div>
+            <div class="study_detail">
+              <p>A+B</p>
+              <span>3셈</span>
+            </div>
+          </div>
+          <div class="study">
+            <div class="study_pick" style="background-image: url(study.png);"></div>
+            <div class="study_detail">
+              <p>A+B</p>
+              <span>4셈</span>
+            </div>
+          </div>
+          <div class="study">
+            <div class="study_pick" style="background-image: url(study.png);"></div>
+            <div class="study_detail">
+              <p>A+B</p>
+              <span>5셈</span>
+            </div>
+          </div>
+          <div class="study">
+            <div class="study_pick" style="background-image: url(study.png);"></div>
+            <div class="study_detail">
+              <p>A+B</p>
+              <span>6셈</span>
+            </div>
+          </div>
         </div>
-        
-        <div id="scriptDisplay" style="margin-top: -400px; width: auto; height: 350px; border: 1px solid #ccc;">
-          <script id="cScript" src="https://gist.github.com/ows710/307ff513d6b5a81a11d76a01d3914af5.js"></script>
-          <script id="javaScript" src="https://gist.github.com/ows710/ba71cbea0d0d1f3f4a66890da99abe88.js"></script>
-          <script id="pythonScript" src="https://gist.github.com/ows710/8a036cc50835abc891c67d89c9d94888.js"></script>
-          <script id="nodejsScript" src="https://gist.github.com/ows710/d5384e7edca4726b0ea6c94a85dc8819.js"></script>
-        </div>
-        
-        <script>
-          function showScript(language) {
-            var scripts = document.querySelectorAll('script[id$="Script"]');
-            scripts.forEach(function(script) {
-              script.style.display = 'none';
-            });
-        
-            var selectedScript = document.getElementById(language + 'Script');
-            if (selectedScript) {
-              selectedScript.style.display = 'block';
-            }
-          }
-        </script>        
-      </article>
     </section>
     <footer>
       <div>

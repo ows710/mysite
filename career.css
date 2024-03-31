@@ -1,7 +1,7 @@
-*{margin: 0px; padding: 0px; font-family: 'Verdana'; box-sizing: border-box;}
+*{margin: 0px; padding: 0px; font-family: "verdana"; box-sizing: border-box;}
 ul {list-style-type: none;}
 a{text-decoration: none;}
-header{width: 100%; border-bottom: 1px solid black;}
+header{width: 100%; border-bottom: 1px solid black; position: fixed; top: 0px; background: white;}
 header .inner {width: 1180px; height: 90px; margin: 0px auto; position: relative;}
 header .inner h1 {position: absolute; left: 10px; bottom: 15px;}
 header .inner h1 a {font: bold 24px/1 "verdana"; color: #444;}
@@ -12,17 +12,14 @@ header .inner #gnb li a:hover {background: #555; color: #fff;}
 header .inner .util {position: absolute; top: 20px; right: 30px;}
 header .inner .util li {float: left;}
 header .inner .util li a {display: block; font: 12px/1 "verdana"; color: #999; padding: 0px 10px;}
-.main {width: 100%; height: 200px; background-image: url(bg_main.png); background-repeat: no-repeat; background-size: 100% 100%; text-align: center;}
-.main span {width: 1000px; height: 200px; margin: 0px auto; color: white; font-size: 50px; font-weight: bold; line-height: 200px;}
-section {width: 1180px; height: 450px; margin: 0px auto;}
-.menu {width: 100%; height: 400px; background-color: lightgreen; margin: 20px; border: solid red; border-radius: 20px; overflow: auto;}
-.menu_pick {width: 600px; height: 100%; float: left; margin-right: 20px; background-repeat: no-repeat;}
-.menu_detail {line-height: 100px; text-align: center; padding: 50px 0px;}
-.menu_detail p {display: block; font-size: 50px; font-weight: bold;}
-.menu_detail span {display: block; font-size: 20px;}
-.move {padding: 10px 20px; background-color: #007bff; color: #ffffff; border-radius: 5px; font-size: 20px; cursor: pointer;}
-.move:hover {background-color: #0056b3;}
-  
+.content {margin: 100px 100px; margin-top: 100px; padding: 20px;}
+.content h1 {margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #2ecc71; border-width: 10px;}
+.study_container { display: flex; flex-wrap: wrap; gap: 20px; margin: 20px 0px;}
+.study { flex: 0 0 auto; width: 300px; border: 1px solid #ccc; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+.study_pick { flex: 1; background-size: cover; background-position: center; height: 200px; }
+.study_detail { flex: 1; padding: 20px; display: flex; flex-direction: column; justify-content: center;}
+.study_detail p { font-size: 24px; margin-bottom: 10px;}
+.study_detail span { font-size: 18px; color: #555;}
 footer {width: 100%; height: 200px; margin-top: 1000px; padding-bottom: 30px; background-color: #202032;}
 footer span {font-size: 30px; font-weight: bold;}
 footer div { width: 1000px; margin: 0px auto; position: relative;}
