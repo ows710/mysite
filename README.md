@@ -1,2 +1,2 @@
 # mysite
-Welcome to my record
+지금까지 했던 내용들 모두 기록하는 곳
