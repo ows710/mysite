@@ -3,9 +3,11 @@
 * 알고리즘
   * 백준 코딩연습(C, Java, Python, Node.js)
 * 프로젝트
+  * Web연구
   * G.P
   * LCK종합정보시스템
   * 헤어해죠~
+  * MathApp
 * 커리어
   * 수학 시뮬레이션
   * Math Question Maker
