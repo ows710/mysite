@@ -9,8 +9,9 @@
   * 헤어해죠~
   * MathApp
 * 커리어
-  * 수학 시뮬레이션
-  * Math Question Maker
-  * Algeomath 3D, kid 3D
-  * 웹 디지털 교과서 콘텐츠 제작
+  * (주)셈웨어-인턴
+    * 수학 시뮬레이션
+    * Math Question Maker
+    * Algeomath 3D, kid 3D
+    * 웹 디지털 교과서 콘텐츠 제작
 * 내소개
