@@ -1,7 +1,7 @@
 # mysite
 지금까지 했던 내용들 모두 기록하는 곳
 * 알고리즘
-  * 백준 코딩연습(C, Java, Python, Node.js)
+  * 프로그래밍 역량(C, Java, Python, Node.js)- 코딩테스트 대비(백준)
 * 프로젝트
   * Web연구
   * G.P
