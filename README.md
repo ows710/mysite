@@ -10,8 +10,8 @@
   * MathApp
 * 커리어
   * (주)셈웨어-인턴 [23.9.1~23.12.21]
-    * 수학 시뮬레이션
+    * 수학 시뮬레이션 개발
     * Math Question Maker
-    * Algeomath 3D, kid 3D
+    * Algeomath 3D, kid 3D 유지보수
     * 웹 디지털 교과서 콘텐츠 제작
 * 내소개
