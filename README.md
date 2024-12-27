@@ -10,7 +10,7 @@
   * MathApp
   * SelfTop
 * 커리어
-  * (주)셈웨어-인턴 [23.9.1~23.12.21]
+  * (주)셈웨어-인턴 [23.9.1 ~ 23.12.21]
     * 수학 시뮬레이션 개발
     * Math Question Maker
     * Algeomath 3D, kid 3D 유지보수
