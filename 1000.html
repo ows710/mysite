@@ -1,7 +1,7 @@
 <!doctype html>
 <html> 
   <head><title>SOLVEDPROBLEM</title><meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="one.css"></head>
+    <link rel="stylesheet" type="text/css" href="1000.css"></head>
   <body>
     <header>
       <div class="inner">
@@ -49,33 +49,26 @@
         <h3>풀이 코드</h3>
         <div class="lang">
           <ul>
-            <li><a href="#c" onclick="showScript('c')"><img src='c.png'></a></li>
-            <li><a href="#java" onclick="showScript('java')"><img src='java.png'></a></li>
-            <li><a href="#python" onclick="showScript('python')"><img src='python.png'></a></li>
-            <li><a href="#nodejs" onclick="showScript('nodejs')"><img src='nodejs.png'></a></li>
+            <li><a href="#c" onclick><img src='c.png'></a></li>
+            <li><a href="#java" onclick><img src='java.png'></a></li>
+            <li><a href="#python" onclick><img src='python.png'></a></li>
+            <li><a href="#nodejs" onclick><img src='nodejs.png'></a></li>
           </ul>
         </div>
         
-        <div id="scriptDisplay" style="margin-top: -400px; width: auto; height: 350px; border: 1px solid #ccc;">
-          <script id="cScript" src="https://gist.github.com/ows710/307ff513d6b5a81a11d76a01d3914af5.js"></script>
-          <script id="javaScript" src="https://gist.github.com/ows710/ba71cbea0d0d1f3f4a66890da99abe88.js"></script>
-          <script id="pythonScript" src="https://gist.github.com/ows710/8a036cc50835abc891c67d89c9d94888.js"></script>
-          <script id="nodejsScript" src="https://gist.github.com/ows710/d5384e7edca4726b0ea6c94a85dc8819.js"></script>
+        <div id="c" style="margin-top: -400px; height: auto;">
+          <script src="https://gist.github.com/ows710/307ff513d6b5a81a11d76a01d3914af5.js"></script>
         </div>
-        
-        <script>
-          function showScript(language) {
-            var scripts = document.querySelectorAll('script[id$="Script"]');
-            scripts.forEach(function(script) {
-              script.style.display = 'none';
-            });
-        
-            var selectedScript = document.getElementById(language + 'Script');
-            if (selectedScript) {
-              selectedScript.style.display = 'block';
-            }
-          }
-        </script>        
+        <div id="java" style=" width: auto; height: auto;">
+          <script src="https://gist.github.com/ows710/ba71cbea0d0d1f3f4a66890da99abe88.js"></script>
+        </div>
+        <div id="python" style="width: auto; height: auto;">
+          <script src="https://gist.github.com/ows710/8a036cc50835abc891c67d89c9d94888.js"></script>
+        </div>
+        <div id="nodejs" style="width: auto; height: auto;"></div>
+          <script src="https://gist.github.com/ows710/d5384e7edca4726b0ea6c94a85dc8819.js"></script>
+        </div>
+      
       </article>
     </section>
     <footer>
