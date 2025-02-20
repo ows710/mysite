@@ -49,26 +49,49 @@
         <h3>풀이 코드</h3>
         <div class="lang">
           <ul>
-            <li><a href="#c" onclick><img src='c.png'></a></li>
-            <li><a href="#java" onclick><img src='java.png'></a></li>
-            <li><a href="#python" onclick><img src='python.png'></a></li>
-            <li><a href="#nodejs" onclick><img src='nodejs.png'></a></li>
+            <li onclick="showCode('c', this)"><img src="c.png" alt="C"></li>
+            <li onclick="showCode('java', this)"><img src="java.png" alt="Java"></li>
+            <li onclick="showCode('python', this)"><img src="python.png" alt="Python"></li>
+            <li onclick="showCode('nodejs', this)"><img src="nodejs.png" alt="Node.js"></li>
           </ul>
         </div>
         
-        <div id="c" style="margin-top: -400px; height: auto;">
-          <script src="https://gist.github.com/ows710/307ff513d6b5a81a11d76a01d3914af5.js"></script>
-        </div>
-        <div id="java" style=" width: auto; height: auto;">
-          <script src="https://gist.github.com/ows710/ba71cbea0d0d1f3f4a66890da99abe88.js"></script>
-        </div>
-        <div id="python" style="width: auto; height: auto;">
-          <script src="https://gist.github.com/ows710/8a036cc50835abc891c67d89c9d94888.js"></script>
-        </div>
-        <div id="nodejs" style="width: auto; height: auto;"></div>
-          <script src="https://gist.github.com/ows710/d5384e7edca4726b0ea6c94a85dc8819.js"></script>
+        <div class="code-container" style="margin-top: -400px; width: 1000px; height: 580px;">
+          <div id="c" class="code-block">
+              <script src="https://gist.github.com/ows710/307ff513d6b5a81a11d76a01d3914af5.js" style="width: 1000px;"></script>
+          </div>
+          <div id="java" class="code-block">
+              <script src="https://gist.github.com/ows710/ba71cbea0d0d1f3f4a66890da99abe88.js"></script>
+          </div>
+          <div id="python" class="code-block">
+              <script src="https://gist.github.com/ows710/8a036cc50835abc891c67d89c9d94888.js"></script>
+          </div>
+          <div id="nodejs" class="code-block">
+              <script src="https://gist.github.com/ows710/d5384e7edca4726b0ea6c94a85dc8819.js"></script>
+          </div>
         </div>
       
+        <script>
+          document.querySelector('.lang li:first-child img').classList.add('active');
+
+          function showCode(lang, element) {
+              // 모든 코드 블록 숨기기
+              document.querySelectorAll('.code-block').forEach(div => {
+                  div.style.display = 'none';
+              });
+
+              // 선택한 코드 블록 표시
+              document.getElementById(lang).style.display = 'block';
+
+              // 모든 이미지의 테두리 초기화
+              document.querySelectorAll('.lang img').forEach(img => {
+                  img.classList.remove('active');
+              });
+
+              // 선택한 이미지에 빨간 테두리 적용
+              element.querySelector('img').classList.add('active');
+          }
+      </script>
       </article>
     </section>
     <footer>

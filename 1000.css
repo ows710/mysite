@@ -20,18 +20,20 @@ section {width: 1000px; margin: 0px auto; overflow: hidden; padding-top: 120px; 
 article {z-index: -1; line-height: 50px;}
 .success {width: 200px; height: 100px; border-radius: 8px; padding: 5px; background-color: #4CAF50; color: white; text-align: center; line-height: 100px; font-size: 24px;}  
 .lang {margin: 0 200px; background-color: #ffffff; line-height: 0px;}
-.lang ul {list-style: none; display: flex;}
+.lang ul {list-style: none; display: flex; gap: 10px;}
 .lang li {border: 1px solid #ccc; border-radius: 8px; padding: 5px; margin: 0 10px;}
 .lang a {text-decoration: none; color: #333; font-weight: bold; font-size: 16px; transition: color 0.3s ease;}
 img {width: 50px; height: 50px;}
-.lang ul li a:active img {border: 2px solid #ffcc00; opacity: 0.7;}  
+.lang .active {border: 2px solid red !important;}
+.code-block {display: none;}
+#c {display: block;}
 article.item1 {width: 700px; height: 400px; margin: 10px 10px 0px 0px; background-image: url(700x400.png);}
 article.item1 p {position: absolute; right: 10px; bottom: 10px; font-size: 30px; font-weight: bold; color: white;}
 article.item2 {width: 290px; height: 190px; margin: 10px 0px 0px; background-image: url(290x190.png);}
 article.item2 p {position: absolute; top: 50px; left: 10px; font-size: 20px; font-weight: bold; color: white;}
 article.item3 {width: 290px; height: 95px; margin: 10px 0px 0px;}
 article.item3 p {position: absolute; bottom: 20px; right: 10px; font-size: 20px; font-weight: bold; color: white;}
-section div {float: left; width: 490px; height: 490px; margin-top: 10px;}
+section div {float: left; width: 1080px; height: 490px; margin-top: 10px;}
 article.item4 {width: 490px; height: 240px;}
 article.item4 .p1 {width: 300px; margin: 160px auto 10px;}
 article.item4 .p2 {position: absolute; right: 20px; bottom: 30px; font-size: 30px; font-weight: bold; color: gold;}
@@ -41,7 +43,7 @@ article.item6 p {line-height: 371px; text-align: center; color: white; font-size
 article.item7 {width: 1000px; height: 361px; margin-top: 10px; margin-bottom: 50px; background-image: url(1000x361.png);}
 article.item7 div {width: 450px; height: 150px; position: absolute; right: 30px; bottom: 40px; font-size: 20px; color: white; line-height: 50px;}
 article.item7 div span {font-weight: bold; font-size: 30px;}
-footer {width: 100%; height: 200px; margin-top: 1000px; padding-bottom: 30px; background-color: #202032;}
+footer {width: 100%; height: 200px; padding-bottom: 30px; margin-top: 10px; background-color: #202032;}
 footer span {font-size: 30px; font-weight: bold;}
 footer div { width: 1000px; margin: 0px auto; position: relative;}
 footer p {width: 1000px; margin: 0px auto; padding: 20px 10px 0px; line-height: 20px; color: gray; font-size: 20px;}
