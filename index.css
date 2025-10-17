@@ -1,32 +1,58 @@
 *{margin: 0px; padding: 0px; font-family: 'Verdana'; box-sizing: border-box;}
 ul {list-style-type: none;}
 a{text-decoration: none;}
-header{width: 100%; border-bottom: 1px solid black;}
-header .inner {width: 1180px; height: 90px; margin: 0px auto; position: relative;}
-header .inner h1 {position: absolute; left: 10px; bottom: 15px;}
+header{border-bottom: 1px solid black;}
+header .inner {max-width: 1180px; height: 90px; margin: 0px auto; position: relative; padding: 0 20px;}
+header .inner h1 {position: absolute; left: 20px; bottom: 15px;}
 header .inner h1 a {font: bold 24px/1 "verdana"; color: #444;}
-header .inner #gnb {position: absolute; bottom: 0px; right: 0px;}
-header .inner #gnb li{float: left;}
-header .inner #gnb li a { display: block; font: bold 15px/1 "verdana"; color: #555; padding: 20px 40px; transition: all 0.5s;}
+header .inner #gnb {position: absolute; bottom: 0px; right: 20px;}
+header .inner #gnb li {float: left;}
+header .inner #gnb li a {display: block; font: bold 15px/1 "verdana"; color: #555; padding: 20px 20px; transition: all 0.5s;}
 header .inner #gnb li a:hover {background: #555; color: #fff;}
 header .inner .util {position: absolute; top: 20px; right: 30px;}
 header .inner .util li {float: left;}
 header .inner .util li a {display: block; font: 12px/1 "verdana"; color: #999; padding: 0px 10px;}
-.main {width: 100%; height: 200px; background-image: url(bg_main.png); background-repeat: no-repeat; background-size: 100% 100%; text-align: center;}
-.main span {width: 1000px; height: 200px; margin: 0px auto; color: white; font-size: 50px; font-weight: bold; line-height: 200px;}
-section {width: 1180px; height: 450px; margin: 0px auto;}
-.menu {width: 100%; height: 400px; background-color: lightgreen; margin: 20px; border: solid red; border-radius: 20px; overflow: auto;}
-.menu_pick {width: 600px; height: 100%; float: left; margin-right: 20px; background-repeat: no-repeat;}
-.menu_detail {line-height: 100px; text-align: center; padding: 50px 0px;}
-.menu_detail p {display: block; font-size: 50px; font-weight: bold;}
-.menu_detail span {display: block; font-size: 20px;}
-.move {padding: 10px 20px; background-color: #007bff; color: #ffffff; border-radius: 5px; font-size: 20px; cursor: pointer;}
-.move:hover {background-color: #0056b3;}
+.main {height: 200px; background-image: url(bg_main.png); background-repeat: no-repeat; background-size: cover; background-position: center; text-align: center;}
+.main span {display: block; color: white; font-size: clamp(30px, 5vw, 50px); font-weight: bold; line-height: 200px;}
+section {max-width: 1180px; width: 100%; margin: 50px auto; padding: 0 20px;}
+.menu {height: 300px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); margin: 30px 0; border-radius: 15px; overflow: hidden; display: flex; align-items: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease;}
+.menu:hover {transform: translateY(-5px);}
+.menu:nth-child(2) {flex-direction: row-reverse; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);}
+.menu:nth-child(3) {background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);}
+.menu_pick {width: 50%; height: 100%; background-size: contain;  background-position: center; background-repeat: no-repeat; background-color: rgba(255,255,255,0.1);}
+.menu_detail {width: 50%; text-align: center; padding: 40px 20px; color: white;}
+.menu_detail p {font-size: clamp(24px, 4vw, 36px); font-weight: bold; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);}
+.menu_detail span {display: block; font-size: clamp(14px, 2vw, 18px); margin-bottom: 30px; opacity: 0.9;}
+.move {display: inline-block; padding: 12px 30px; background-color: rgba(255,255,255,0.2); color: white; border: 2px solid white; border-radius: 25px; font-size: clamp(14px, 2vw, 16px); font-weight: bold; cursor: pointer; transition: all 0.3s ease; backdrop-filter: blur(10px);}
+.move:hover {background-color: white; color: #333; transform: scale(1.05);}
   
-footer {width: 100%; height: 200px; margin-top: 1000px; padding-bottom: 30px; background-color: #202032;}
-footer span {font-size: 30px; font-weight: bold;}
-footer div { width: 1000px; margin: 0px auto; position: relative;}
-footer p {width: 1000px; margin: 0px auto; padding: 20px 10px 0px; line-height: 20px; color: gray; font-size: 20px;}
+footer {padding-bottom: 30px; background-color: #202032;}
+footer span {font-size: clamp(20px, 3vw, 30px); font-weight: bold;}
+footer div {max-width: 1180px; width: 100%; margin: 0px auto;}
+footer p {margin: 0px auto; padding: 20px 10px 0px; line-height: 1.5; color: gray; font-size: clamp(14px, 2vw, 20px);}
 footer div h1 {position: absolute; left: 10px; bottom: 15px; color: gray;}
 footer div ul {position: absolute; right: 20px; bottom: 15px;}
 footer div ul li {display: inline-block; margin: 0px 5px; color: gray;}
+
+@media (max-width: 768px) {
+    header .inner #gnb li a {padding: 15px 10px; font-size: 13px;}
+    .main {height: 150px;}
+    .main span {line-height: 150px;}
+    .menu {flex-direction: column !important; min-height: auto;}
+    .menu:nth-child(2) {flex-direction: column !important;}
+    .menu_pick {width: 100%; height: 200px;}
+    .menu_detail {width: 100%; padding: 30px 20px;}
+}
+
+@media (max-width: 480px) {
+    header .inner h1 {left: 10px;}
+    header .inner #gnb {position: static; text-align: center; padding: 10px 0;}
+    header .inner #gnb li {float: none; display: inline-block;}
+    header .inner #gnb li a {padding: 10px 8px; font-size: 12px;}
+    .main {height: 120px;}
+    .main span {line-height: 120px;}
+    section {padding: 0 10px;}
+    .menu {margin: 20px 0;}
+    .menu_detail {padding: 20px 15px;}
+    footer {padding: 20px 10px;}
+}
