@@ -1,23 +1,20 @@
-*{margin: 0px; padding: 0px; font-family: 'Verdana'; box-sizing: border-box;}
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333; background: #f8fafc;}
 ul {list-style-type: none;}
-a{text-decoration: none;}
-header {border-bottom: 1px solid black;}
-header .inner {max-width: 1180px; height: 90px; margin: 0px auto; position: relative; padding: 0 20px;}
-header .inner h1 {position: absolute; left: 20px; bottom: 15px;}
-header .inner h1 a {font: bold 24px/1 "verdana"; color: #444;}
-header .inner #gnb {position: absolute; bottom: 0px; right: 20px;}
-header .inner #gnb li {float: left;}
-header .inner #gnb li a {display: block; font: bold 15px/1 "verdana"; color: #555; padding: 20px 20px; transition: all 0.5s;}
-header .inner #gnb li a:hover {background: #555; color: #fff;}
-header .inner .util {position: absolute; top: 20px; right: 30px;}
-header .inner .util li {float: left;}
-header .inner .util li a {display: block; font: 12px/1 "verdana"; color: #999; padding: 0px 10px;}
+a {text-decoration: none;}
+header {position: fixed; width: 100%; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);}
+header .inner {max-width: 1200px; height: 80px; margin: 0 auto; position: relative; padding: 0 20px; display: flex; align-items: center; justify-content: space-between;}
+header .inner h1 a {font: bold 28px/1 "Poppins"; color: #2d3748; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;}
+header .inner #gnb {display: flex;}
+header .inner #gnb li a {display: block; font: 500 14px/1 "Poppins"; color: #4a5568; padding: 15px 20px; transition: all 0.3s ease; border-radius: 8px; margin: 0 5px;}
+header .inner #gnb li a:hover, header .inner #gnb li a.active {background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; transform: translateY(-2px);}
 
-.contents, .content {max-width: 1180px; margin: 0px auto; padding: 20px 20px;}
-.contents h1, .content h1 {margin-bottom: 30px; padding-bottom: 15px; font-size: 36px; color: #333; position: relative;}
-.contents:nth-of-type(1) h1 {border-bottom: 4px solid #667eea;}
-.contents:nth-of-type(2) h1 {border-bottom: 4px solid #f5576c;}
-.content h1 {border-bottom: 4px solid #66ea99;}
+.content_study, .content_career {max-width: 1180px; margin: 0px auto; padding: 20px 20px;}
+.content_study h1, .content_career h1 {margin-bottom: 30px; padding-bottom: 15px; font-size: 36px; color: #333; position: relative;}
+.content_study:nth-of-type(1) h1 {border-bottom: 4px solid #667eea;}
+.content_study:nth-of-type(2) h1 {border-bottom: 4px solid #f5576c;}
+.content_career:nth-of-type(1) h1 {border-bottom: 4px solid #66ea99;}
+.content_career:nth-of-type(2) h1 {border-bottom: 4px solid #a855f7;}
 
 .study_container { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; margin: 40px 0 60px;}
 .study { border: none; border-radius: 20px; overflow: hidden; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; background: white;position: relative;}
@@ -30,10 +27,9 @@ header .inner .util li a {display: block; font: 12px/1 "verdana"; color: #999; p
 .study:hover .study_detail p {color: #667eea;}
 .study_detail span {font-size: 16px; color: #666; line-height: 1.5;}
 
-footer {padding-bottom: 30px; background-color: #202032;}
-footer span {font-size: clamp(20px, 3vw, 30px); font-weight: bold;}
-footer div {max-width: 1180px; margin: 0px auto;}
-footer p {margin: 0px auto; padding: 20px 10px 0px; line-height: 1.5; color: gray; font-size: clamp(14px, 2vw, 20px);}
-footer div h1 {position: absolute; left: 10px; bottom: 15px; color: gray;}
-footer div ul {position: absolute; right: 20px; bottom: 15px;}
-footer div ul li {display: inline-block; margin: 0px 5px; color: gray;}
+footer {background: #2d3748; color: white; padding: 50px 0;}
+.footer-content {max-width: 1200px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: 1fr 2fr; gap: 40px; align-items: start;}
+.footer-brand h3 {font-size: 2rem; font-weight: 700; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 10px;}
+.footer-brand p {color: #a0aec0; font-size: 1.1rem;}
+.copyright {font-weight: 600; margin-bottom: 20px; color: #e2e8f0;}
+.footer-contact p {color: #a0aec0; margin-bottom: 8px; line-height: 1.6;}

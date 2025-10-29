@@ -1,17 +1,13 @@
-*{margin: 0px; padding: 0px; font-family: 'Verdana'; box-sizing: border-box;}
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333; background: #f8fafc;}
 ul {list-style-type: none;}
-a{text-decoration: none;}
-header {position: fixed; width: 100%; background: white; z-index: 1000; border-bottom: 1px solid black;}
-header .inner {max-width: 1180px; height: 90px; margin: 0px auto; position: relative; padding: 0 20px;}
-header .inner h1 {position: absolute; left: 20px; bottom: 15px;}
-header .inner h1 a {font: bold 24px/1 "verdana"; color: #444;}
-header .inner #gnb {position: absolute; bottom: 0px; right: 20px;}
-header .inner #gnb li {float: left;}
-header .inner #gnb li a {display: block; font: bold 15px/1 "verdana"; color: #555; padding: 20px 20px; transition: all 0.5s;}
-header .inner #gnb li a:hover {background: #555; color: #fff;}
-header .inner .util {position: absolute; top: 20px; right: 30px;}
-header .inner .util li {float: left;}
-header .inner .util li a {display: block; font: 12px/1 "verdana"; color: #999; padding: 0px 10px;}
+a {text-decoration: none;}
+header {position: fixed; width: 100%; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);}
+header .inner {max-width: 1200px; height: 80px; margin: 0 auto; position: relative; padding: 0 20px; display: flex; align-items: center; justify-content: space-between;}
+header .inner h1 a {font: bold 28px/1 "Poppins"; color: #2d3748; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;}
+header .inner #gnb {display: flex;}
+header .inner #gnb li a {display: block; font: 500 14px/1 "Poppins"; color: #4a5568; padding: 15px 20px; transition: all 0.3s ease; border-radius: 8px; margin: 0 5px;}
+header .inner #gnb li a:hover, header .inner #gnb li a.active {background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; transform: translateY(-2px);}
 
 .content {max-width: 1180px; margin: 0px auto; padding: 110px 20px 20px 20px; position: relative;}
 .navigation {width: 250px; height: calc(100vh - 90px); background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; overflow-y: auto; position: fixed; top: 90px; left: calc(50% - 590px); box-shadow: 2px 0 10px rgba(0,0,0,0.1); z-index: 100;}
