@@ -2,14 +2,15 @@
 body {font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333; background: #f8fafc;}
 ul {list-style-type: none;}
 a {text-decoration: none;}
-header {position: fixed; width: 100%; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);}
+header {position: fixed; top: 0; width: 100%; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);}
 header .inner {max-width: 1200px; height: 80px; margin: 0 auto; position: relative; padding: 0 20px; display: flex; align-items: center; justify-content: space-between;}
 header .inner h1 a {font: bold 28px/1 "Poppins"; color: #2d3748; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;}
 header .inner #gnb {display: flex;}
 header .inner #gnb li a {display: block; font: 500 14px/1 "Poppins"; color: #4a5568; padding: 15px 20px; transition: all 0.3s ease; border-radius: 8px; margin: 0 5px;}
 header .inner #gnb li a:hover, header .inner #gnb li a.active {background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; transform: translateY(-2px);}
 
-.content_study, .content_career {max-width: 1180px; margin: 0px auto; padding: 20px 20px;}
+.content_study, .content_career {max-width: 1180px; margin: 0 auto; padding: 20px 20px;}
+.content_study:first-of-type, .content_career:first-of-type {margin-top: 80px;}
 .content_study h1, .content_career h1 {margin-bottom: 30px; padding-bottom: 15px; font-size: 36px; color: #333; position: relative;}
 .content_study:nth-of-type(1) h1 {border-bottom: 4px solid #667eea;}
 .content_study:nth-of-type(2) h1 {border-bottom: 4px solid #f5576c;}

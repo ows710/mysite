@@ -23,7 +23,8 @@ header .inner #gnb li a:hover, header .inner #gnb li a.active {background: linea
 .intro-icon {font-size: 2rem; margin-right: 20px; min-width: 60px;}
 .intro-list p {font-size: 1.1rem; color: #4a5568; font-weight: 400;}
 .info-section, .contact-section {margin-bottom: 80px;}
-.info-grid, .contact-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1000px; margin: 0 auto;}
+.info-grid {display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; max-width: 1200px; margin: 0 auto;}
+.contact-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1000px; margin: 0 auto;}
 .info-card, .contact-card {background: white; padding: 40px 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); text-align: center; transition: all 0.3s ease; border: 2px solid transparent;}
 .info-card:hover, .contact-card:hover {transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); border-color: rgba(102, 126, 234, 0.3);}
 .info-icon, .contact-icon {width: 80px; height: 80px; margin: 0 auto 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center;}

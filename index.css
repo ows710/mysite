@@ -2,14 +2,14 @@
 body {font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333; background: #f8fafc;}
 ul {list-style-type: none;}
 a {text-decoration: none;}
-header {position: fixed; width: 100%; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);}
+header {position: fixed; top: 0; left: 0; width: 100%; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);}
 header .inner {max-width: 1200px; height: 80px; margin: 0 auto; position: relative; padding: 0 20px; display: flex; align-items: center; justify-content: space-between;}
 header .inner h1 a {font: bold 28px/1 "Poppins"; color: #2d3748; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;}
 header .inner #gnb {display: flex;}
 header .inner #gnb li a {display: block; font: 500 14px/1 "Poppins"; color: #4a5568; padding: 15px 20px; transition: all 0.3s ease; border-radius: 8px; margin: 0 5px;}
 header .inner #gnb li a:hover, header .inner #gnb li a.active {background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; transform: translateY(-2px);}
 
-.main {height: 200px; background-image: url(bg_main.png); background-repeat: no-repeat; background-size: cover; background-position: center; text-align: center;}
+.main {margin-top: 80px; height: 200px; background-image: url(bg_main.png); background-repeat: no-repeat; background-size: cover; background-position: center; text-align: center;}
 .main span {display: block; color: white; font-size: clamp(30px, 5vw, 50px); font-weight: bold; line-height: 200px;}
 section {max-width: 1180px; width: 100%; margin: 50px auto; padding: 0 20px;}
 .menu {height: 300px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); margin: 30px 0; border-radius: 15px; overflow: hidden; display: flex; align-items: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease;}
