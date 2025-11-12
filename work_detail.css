@@ -1,0 +1,59 @@
+/* ===== 기본 설정 ===== */
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333; background: #f8fafc;}
+ul {list-style-type: none;}
+a {text-decoration: none;}
+
+/* ===== 헤더 ===== */
+header {position: fixed; top: 0; width: 100%; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);}
+header .inner {max-width: 1200px; height: 80px; margin: 0 auto; position: relative; padding: 0 20px; display: flex; align-items: center; justify-content: space-between;}
+header .inner h1 a {font: bold 28px/1 "Poppins"; color: #2d3748; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;}
+header .inner #gnb {display: flex;}
+header .inner #gnb li a {display: block; font: 500 14px/1 "Poppins"; color: #4a5568; padding: 15px 20px; transition: all 0.3s ease; border-radius: 8px; margin: 0 5px;}
+header .inner #gnb li a:hover, header .inner #gnb li a.active {background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; transform: translateY(-2px);}
+
+/* ===== 메인 컨테이너 ===== */
+.container {max-width: 1200px; margin: 0 auto; padding: 140px 20px 80px; min-height: calc(100vh - 250px);}
+
+/* 상단 목록으로 버튼 */
+.breadcrumb {margin-bottom: 30px;}
+.back-btn {display: inline-block; padding: 12px 24px; background: #48bb78; color: white; border-radius: 8px; font-weight: 500; font-size: 0.95rem; transition: all 0.3s ease; box-shadow: 0 2px 10px rgba(72, 187, 120, 0.3);}
+.back-btn:hover {background: #38a169; transform: translateY(-2px); box-shadow: 0 4px 15px rgba(72, 187, 120, 0.4);}
+
+/* ===== 프로젝트 헤더 ===== */
+.header {text-align: center; margin-bottom: 60px; padding: 40px; background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);}
+.project-title {font-size: 2.8rem; font-weight: 700; margin-bottom: 15px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;}
+.project-period {font-size: 1.1rem; color: #718096; margin-bottom: 25px; font-weight: 500;}
+.tech-stack {display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 25px;}
+.tech-tag {background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 10px 24px; border-radius: 25px; font-size: 0.95rem; font-weight: 500; box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3); transition: transform 0.3s ease;}
+.tech-tag:hover {transform: translateY(-2px);}
+
+/* ===== 콘텐츠 섹션 ===== */
+.content-section {background: white; padding: 45px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); margin-bottom: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease;}
+.content-section:hover {transform: translateY(-5px); box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);}
+.section-title {font-size: 1.8rem; font-weight: 600; margin-bottom: 25px; color: #2d3748; border-left: 5px solid #667eea; padding-left: 20px;}
+.content-section p {font-size: 1.05rem; line-height: 1.8; color: #4a5568;}
+
+/* ===== 설명 리스트 ===== */
+.description-list {list-style: none; padding-left: 0;}
+.description-list li {padding: 15px 0 15px 35px; position: relative; font-size: 1.05rem; color: #4a5568; line-height: 1.7; transition: color 0.3s ease;}
+.description-list li:before {content: "▹"; position: absolute; left: 0; color: #667eea; font-weight: bold; font-size: 1.5rem;}
+.description-list li:hover {color: #2d3748;}
+
+/* ===== 스크린샷 ===== */
+.screenshot {width: 100%; max-width: 800px; margin: 30px auto; display: block; border-radius: 12px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); transition: transform 0.3s ease;}
+.screenshot:hover {transform: scale(1.02);}
+
+/* ===== 네비게이션 ===== */
+.navigation {display: flex; justify-content: space-between; margin-top: 60px; gap: 20px;}
+.nav-placeholder {width: 180px;}
+.nav-btn {padding: 15px 35px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px; font-weight: 500; font-size: 1rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3); min-width: 180px; text-align: center;}
+.nav-btn:hover {transform: translateY(-3px); box-shadow: 0 6px 25px rgba(102, 126, 234, 0.4);}
+
+/* ===== 푸터 ===== */
+footer {background: #2d3748; color: white; padding: 50px 0;}
+.footer-content {max-width: 1200px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: 1fr 2fr; gap: 40px; align-items: start;}
+.footer-brand h3 {font-size: 2rem; font-weight: 700; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 10px;}
+.footer-brand p {color: #a0aec0; font-size: 1.1rem;}
+.copyright {font-weight: 600; margin-bottom: 20px; color: #e2e8f0;}
+.footer-contact p {color: #a0aec0; margin-bottom: 8px; line-height: 1.6;}

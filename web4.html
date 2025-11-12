@@ -1,9 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <title>WEB - CSS Animation</title>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WEB4</title>
+    <link rel="stylesheet" type="text/css" href="work_detail.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="inner">
+        <h1><a href="index.html">PETER</a></h1>
+        <ul id="gnb">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="study.html" class="active">STUDY</a></li>
+          <li><a href="algorithm.html">ALGORITHM</a></li>
+          <li><a href="career.html">CAREER</a></li>
+          <li><a href="aboutme.html">ABOUT ME</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="study.html" class="back-btn">← 목록으로 돌아가기</a>
+      </div>
+
+      <div class="header">
+        <h1 class="project-title">게임 콘텐츠 페이지</h1>
+        <p class="project-period">2023.08 ~ 2023.09.09</p>
+        <div class="tech-stack">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS - Animation</span>
+        </div>
+      </div>
+
+      <section class="content-section">
+        <h2 class="section-title">프로젝트 개요</h2>
+        <p>
+          CSS 애니메이션 기술을 활용하여 게임 관련 콘텐츠에 동적인 효과를 추가한
+          프로젝트입니다. @keyframes, animation, transition, transform 속성을
+          사용하여 사용자 인터랙션에 반응하는 생동감 있는 웹 페이지를
+          구현하였습니다.
+        </p>
+      </section>
+
+      <section class="content-section">
+        <h2 class="section-title">주요 학습 내용</h2>
+        <ul class="description-list">
+          <li>@keyframes를 사용한 커스텀 애니메이션 정의</li>
+          <li>
+            animation 속성 (duration, timing-function, delay, iteration-count)
+            활용
+          </li>
+          <li>transition을 통한 부드러운 상태 변화 구현</li>
+          <li>transform (translate, rotate, scale, skew) 효과 적용</li>
+          <li>hover, focus 등 가상 클래스와 애니메이션 결합</li>
+          <li>애니메이션 성능 최적화 기법 학습</li>
+        </ul>
+      </section>
+
+      <section class="content-section">
+        <h2 class="section-title">프로젝트 결과물</h2>
+        <!-- 스크린샷이 있다면 -->
+        <!-- <img src="web4-screenshot.jpg" alt="게임 콘텐츠 페이지" class="screenshot"> -->
+        <p>
+          페이드 인/아웃, 슬라이드, 회전, 확대/축소 등 다양한 애니메이션 효과를
+          구현하였습니다. 사용자의 마우스 움직임과 클릭에 반응하는 인터랙티브한
+          요소들을 추가하여 정적인 웹 페이지를 동적이고 매력적인 콘텐츠로
+          변화시켰습니다.
+        </p>
+      </section>
+
+      <section class="content-section">
+        <h2 class="section-title">배운 점 & 느낀 점</h2>
+        <ul class="description-list">
+          <li>애니메이션이 사용자 경험(UX)에 미치는 긍정적인 영향을 체감함</li>
+          <li>과도한 애니메이션은 오히려 방해가 될 수 있음을 인식함</li>
+          <li>timing-function을 통해 자연스러운 움직임을 만드는 방법 습득</li>
+          <li>
+            JavaScript 없이도 CSS만으로 많은 인터랙션 구현이 가능함을 배움
+          </li>
+          <li>
+            웹 연구 과정을 통해 HTML/CSS 기초부터 고급 기법까지 체계적으로 학습
+            완료
+          </li>
+        </ul>
+      </section>
+
+      <nav class="navigation">
+        <a href="web3.html" class="nav-btn">← 이전 프로젝트</a>
+        <div class="nav-placeholder"></div>
+      </nav>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>PETER</h3>
+          <p>Web Developer</p>
+        </div>
+        <div class="footer-info">
+          <p class="copyright">
+            COPYRIGHT(C) 2023 OH WONSEOK. All RIGHTS RESERVED.
+          </p>
+          <div class="footer-contact">
+            <p>
+              64 Jeongjacheon-ro 188beon-gil, Jangan-gu, Suwon-si, Gyeonggi-do,
+              Republic of Korea
+            </p>
+            <p>Tel: 010-3518-1676</p>
+            <p>Email: ows710@ajou.ac.kr / ows0710@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

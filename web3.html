@@ -1,9 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <title>WEB - CSS Position</title>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WEB3</title>
+    <link rel="stylesheet" type="text/css" href="work_detail.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="inner">
+        <h1><a href="index.html">PETER</a></h1>
+        <ul id="gnb">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="study.html" class="active">STUDY</a></li>
+          <li><a href="algorithm.html">ALGORITHM</a></li>
+          <li><a href="career.html">CAREER</a></li>
+          <li><a href="aboutme.html">ABOUT ME</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="study.html" class="back-btn">← 목록으로 돌아가기</a>
+      </div>
+
+      <div class="header">
+        <h1 class="project-title">개인 웹사이트</h1>
+        <p class="project-period">2023.05 ~ 2023.07</p>
+        <div class="tech-stack">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS - Position</span>
+        </div>
+      </div>
+
+      <section class="content-section">
+        <h2 class="section-title">프로젝트 개요</h2>
+        <p>
+          CSS의 position 속성을 중점적으로 학습하며 제작한 개인 웹사이트입니다.
+          내 이름을 딴 포트폴리오 웹사이트의 레이아웃을 다양한 position 값을
+          활용하여 정교하게 조정하고 복잡한 레이아웃 구조를 구현하였습니다.
+        </p>
+      </section>
+
+      <section class="content-section">
+        <h2 class="section-title">주요 학습 내용</h2>
+        <ul class="description-list">
+          <li>
+            position: static, relative, absolute, fixed, sticky의 차이점 이해
+          </li>
+          <li>z-index를 활용한 레이어 순서 제어</li>
+          <li>top, right, bottom, left 속성을 통한 정밀한 위치 조정</li>
+          <li>고정 헤더(fixed header) 구현</li>
+          <li>요소의 절대 위치 지정을 통한 복잡한 레이아웃 구성</li>
+          <li>반응형 레이아웃에서의 position 활용</li>
+        </ul>
+      </section>
+
+      <section class="content-section">
+        <h2 class="section-title">프로젝트 결과물</h2>
+        <!-- 스크린샷이 있다면 -->
+        <!-- <img src="web3-screenshot.jpg" alt="개인 웹사이트" class="screenshot"> -->
+        <p>
+          position 속성을 활용하여 고정 네비게이션 바, 떠 있는 요소, 겹쳐진
+          레이아웃 등 다양한 디자인 효과를 구현하였습니다. 특히 요소의 위치를
+          자유자재로 제어하는 방법을 익혀 더욱 창의적인 레이아웃 디자인이
+          가능해졌습니다.
+        </p>
+      </section>
+
+      <section class="content-section">
+        <h2 class="section-title">배운 점 & 느낀 점</h2>
+        <ul class="description-list">
+          <li>position 속성의 각 값이 문서 흐름에 미치는 영향을 이해함</li>
+          <li>absolute와 relative의 조합으로 정교한 배치가 가능함을 깨달음</li>
+          <li>고정 요소(fixed)를 활용한 UX 개선 방법 학습</li>
+          <li>레이아웃 설계 시 position 속성 선택의 중요성 인식</li>
+        </ul>
+      </section>
+
+      <nav class="navigation">
+        <a href="web2.html" class="nav-btn">← 이전 프로젝트</a>
+        <a href="web4.html" class="nav-btn">다음 프로젝트 →</a>
+      </nav>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>PETER</h3>
+          <p>Web Developer</p>
+        </div>
+        <div class="footer-info">
+          <p class="copyright">
+            COPYRIGHT(C) 2023 OH WONSEOK. All RIGHTS RESERVED.
+          </p>
+          <div class="footer-contact">
+            <p>
+              64 Jeongjacheon-ro 188beon-gil, Jangan-gu, Suwon-si, Gyeonggi-do,
+              Republic of Korea
+            </p>
+            <p>Tel: 010-3518-1676</p>
+            <p>Email: ows710@ajou.ac.kr / ows0710@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,9 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <title>WEB - HTML 기초</title>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WEB1</title>
+    <link rel="stylesheet" type="text/css" href="work_detail.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="inner">
+        <h1><a href="index.html">PETER</a></h1>
+        <ul id="gnb">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="study.html" class="active">STUDY</a></li>
+          <li><a href="algorithm.html">ALGORITHM</a></li>
+          <li><a href="career.html">CAREER</a></li>
+          <li><a href="aboutme.html">ABOUT ME</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="study.html" class="back-btn">← 목록으로 돌아가기</a>
+      </div>
+
+      <div class="header">
+        <h1 class="project-title">자기소개 페이지</h1>
+        <p class="project-period">2022.12.28 ~ 2023.01</p>
+        <div class="tech-stack">
+          <span class="tech-tag">HTML</span>
+        </div>
+      </div>
+
+      <section class="content-section">
+        <h2 class="section-title">프로젝트 개요</h2>
+        <p>
+          HTML을 학습하며 제작한 첫 번째 웹 페이지입니다. 기본적인 HTML 태그를
+          활용하여 자기소개 페이지를 구현하였습니다.
+        </p>
+      </section>
+
+      <section class="content-section">
+        <h2 class="section-title">주요 학습 내용</h2>
+        <ul class="description-list">
+          <li>HTML의 기본 구조 이해 (DOCTYPE, html, head, body)</li>
+          <li>시맨틱 태그 활용 (header, main, section, article, footer)</li>
+          <li>텍스트 관련 태그 (h1~h6, p, strong, em)</li>
+          <li>리스트 태그 (ul, ol, li)</li>
+          <li>링크와 이미지 삽입 (a, img)</li>
+        </ul>
+      </section>
+
+      <section class="content-section">
+        <h2 class="section-title">프로젝트 결과물</h2>
+        <!-- 스크린샷이 있다면 -->
+        <img src="my_email.png" alt="자기소개 페이지" class="screenshot" />
+        <p>
+          웹 페이지의 기본 구조를 이해하고 HTML만으로 콘텐츠를 구조화하는 방법을
+          익혔습니다.
+        </p>
+      </section>
+
+      <section class="content-section">
+        <h2 class="section-title">배운 점 & 느낀 점</h2>
+        <ul class="description-list">
+          <li>시맨틱 마크업의 중요성을 이해하게 됨</li>
+          <li>웹 접근성을 고려한 HTML 작성법 학습</li>
+          <li>구조화된 문서 작성의 기초를 다짐</li>
+        </ul>
+      </section>
+
+      <nav class="navigation">
+        <div class="nav-placeholder"></div>
+        <a href="web2.html" class="nav-btn">다음 프로젝트 →</a>
+      </nav>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>PETER</h3>
+          <p>Web Developer</p>
+        </div>
+        <div class="footer-info">
+          <p class="copyright">
+            COPYRIGHT(C) 2023 OH WONSEOK. All RIGHTS RESERVED.
+          </p>
+          <div class="footer-contact">
+            <p>
+              64 Jeongjacheon-ro 188beon-gil, Jangan-gu, Suwon-si, Gyeonggi-do,
+              Republic of Korea
+            </p>
+            <p>Tel: 010-3518-1676</p>
+            <p>Email: ows710@ajou.ac.kr / ows0710@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
