@@ -11,7 +11,7 @@ header .inner #gnb li a:hover, header .inner #gnb li a.active {background: linea
 
 .content {max-width: 1180px; margin: 0px auto; padding: 110px 20px 20px 20px; position: relative;}
 .navigation {width: 250px; height: calc(100vh - 90px); background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; overflow-y: auto; position: fixed; top: 90px; left: calc(50% - 590px); box-shadow: 2px 0 10px rgba(0,0,0,0.1); z-index: 100;}
-.navigation a {display: block; padding: 18px 20px; text-decoration: none; color: #fff; transition: all 0.3s ease; font-weight: 500;}
+.navigation a {display: block; margin: 0; padding: 18px 20px; text-decoration: none; color: #fff; transition: all 0.3s ease; font-weight: 500;}
 .navigation a:hover {background: rgba(255,255,255,0.1); padding-left: 25px;}
 .navigation .active {background: rgba(255,255,255,0.2);}
 
@@ -25,6 +25,6 @@ section {width: calc(100% - 270px); margin-left: 270px; overflow: hidden; paddin
 .study:hover .study_pick::before {opacity: 1;}
 
 .study_detail {padding: 12px; display: flex; flex-direction: column; text-align: left;}
-.study_detail p {font-size: 16px; font-weight: bold; margin-bottom: 6px; color: #333; transition: color 0.3s ease;}
+.study_detail p {font-size: 14px; font-weight: bold; margin-bottom: 6px; color: #333; transition: color 0.3s ease;}
 .study:hover .study_detail p {color: #667eea;}
 .study_detail span {font-size: 12px; color: #666; line-height: 1.4;}
